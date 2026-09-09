@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Výkaz pracovní doby</title>
+  <link rel="stylesheet" href="styles.css?v=zatrzitko" />
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div>
+        <p class="eyebrow" id="org-label">Mateřská škola</p>
+        <h1>Výkaz pracovní doby</h1>
+        <p class="lead" id="year-label">Čtrnáctidenní cyklus ranní a odpolední směny · školní rok</p>
+      </div>
+      <div class="session-box" id="session-box"></div>
+    </div>
+    <nav id="nav" class="nav"></nav>
+  </header>
+
+  <main>
+    <p class="flash" id="flash" hidden></p>
+    <div id="app"></div>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" id="modal-card"></div>
+  </div>
+
+  <div id="print-root" class="print-root" hidden></div>
+
+  <script src="vendor/xlsx.full.min.js"></script>
+  <script src="model.js?v=obnova"></script>
+  <script src="auth.js?v=obnova"></script>
+  <script src="storage.js?v=obnova"></script>
+  <script src="excel-import.js?v=skutecna-pp2"></script>
+  <script src="zamestnanci-data.js"></script>
+  <script src="app.js?v=zatrzitko"></script>
+</body>
+</html>
